@@ -1,0 +1,4 @@
+.alert--error {
+  background-color: var(--color-error);
+  color: white;
+}

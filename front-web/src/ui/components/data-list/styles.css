@@ -1,0 +1,30 @@
+.data-list {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.data-list-item {
+  margin-top: var(--small-gutter);
+  padding: var(--small-gutter);
+
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.data-list-item:first-of-type {
+  margin-top: 0;
+}
+
+.data-list-item__text {
+  margin: 0;
+}

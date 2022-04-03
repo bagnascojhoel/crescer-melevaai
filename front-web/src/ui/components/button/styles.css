@@ -1,0 +1,11 @@
+.button {
+  padding: var(--small-gutter) var(--gutter);
+
+  background-color: var(--color-light-gray);
+
+  font-weight: bold;
+}
+
+.button--disabled:hover {
+  cursor: not-allowed;
+}

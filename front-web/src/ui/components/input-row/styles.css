@@ -1,0 +1,22 @@
+.input-row {
+}
+
+.input-row__label {
+  margin-bottom: var(--small-gutter);
+  display: block;
+}
+
+.input-row__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-row__item {
+  flex: 1 1 0;
+  margin-right: var(--small-gutter);
+}
+
+.input-row__item:last-of-type {
+  margin-right: 0;
+}

@@ -1,0 +1,10 @@
+.rating__star {
+  padding: 0;
+  display: inline-block;
+  
+  background-color: transparent;
+}
+
+.rating__star:focus {
+  outline: none;
+}

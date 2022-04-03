@@ -1,0 +1,3701 @@
+{
+	"info": {
+		"_postman_id": "4258c81d-4be2-432a-80d7-731bd1dade4f",
+		"name": "MeLevaAí API",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "corridas",
+			"item": [
+				{
+					"name": "passageiros",
+					"item": [
+						{
+							"name": "listarCorridas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/passageiros/:cpf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"passageiros",
+										":cpf"
+									],
+									"variable": [
+										{
+											"id": "071d404a-43d4-428c-a760-725638046128",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "requestRide",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"end\": {\n        \"x\": 74293953,\n        \"y\": 33818734\n    },\n    \"start\": {\n        \"x\": -88593539,\n        \"y\": -22363901\n    }\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/corridas/passageiros/:passengerCpf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"passageiros",
+										":passengerCpf"
+									],
+									"variable": [
+										{
+											"id": "2a89e08b-9663-4a53-8aa2-97e850630901",
+											"key": "passengerCpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) passengerCpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"end\": {\n        \"x\": 25993751,\n        \"y\": -12484927\n    },\n    \"start\": {\n        \"x\": -69162943,\n        \"y\": -75810203\n    }\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:passengerCpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":passengerCpf"
+											],
+											"variable": [
+												{
+													"key": "passengerCpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"end\": {\n        \"x\": 25993751,\n        \"y\": -12484927\n    },\n    \"start\": {\n        \"x\": -69162943,\n        \"y\": -75810203\n    }\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:passengerCpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":passengerCpf"
+											],
+											"variable": [
+												{
+													"key": "passengerCpf"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"end\": {\n        \"x\": 25993751,\n        \"y\": -12484927\n    },\n    \"start\": {\n        \"x\": -69162943,\n        \"y\": -75810203\n    }\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:passengerCpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":passengerCpf"
+											],
+											"variable": [
+												{
+													"key": "passengerCpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"end\": {\n        \"x\": 25993751,\n        \"y\": -12484927\n    },\n    \"start\": {\n        \"x\": -69162943,\n        \"y\": -75810203\n    }\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/corridas/passageiros/:passengerCpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												"passageiros",
+												":passengerCpf"
+											],
+											"variable": [
+												{
+													"key": "passengerCpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "{ride Id}",
+					"item": [
+						{
+							"name": "startRide",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/:rideId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										":rideId"
+									],
+									"variable": [
+										{
+											"id": "a64f1fe7-1401-438d-a48e-60637aaf866a",
+											"key": "rideId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) rideId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "finishRide",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/:rideId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										":rideId"
+									],
+									"variable": [
+										{
+											"id": "99655d33-db8b-484f-9ae2-be2e5847d0b9",
+											"key": "rideId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) rideId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId"
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "rateDriver",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										":rideId",
+										"motoristas",
+										"avaliacao"
+									],
+									"query": [
+										{
+											"key": "nota",
+											"value": "<string>",
+											"description": "(Required) nota"
+										}
+									],
+									"variable": [
+										{
+											"id": "e1173677-eeee-4f4a-b23b-15326fcd48b8",
+											"key": "rideId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) rideId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"motoristas",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"motoristas",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"motoristas",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"motoristas",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/motoristas/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"motoristas",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "ratePassenger",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										":rideId",
+										"passageiros",
+										"avaliacao"
+									],
+									"query": [
+										{
+											"key": "nota",
+											"value": "<string>",
+											"description": "(Required) nota"
+										}
+									],
+									"variable": [
+										{
+											"id": "0c0e430a-4254-4d22-8267-dfb55b9d9359",
+											"key": "rideId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) rideId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"passageiros",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"passageiros",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"passageiros",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"passageiros",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/corridas/:rideId/passageiros/avaliacao?nota=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"corridas",
+												":rideId",
+												"passageiros",
+												"avaliacao"
+											],
+											"query": [
+												{
+													"key": "nota",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "rideId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "listOnGoingRides",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/corridas/em-andamento",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"corridas",
+								"em-andamento"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/em-andamento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"em-andamento"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/em-andamento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"em-andamento"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/em-andamento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"em-andamento"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/corridas/em-andamento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"corridas",
+										"em-andamento"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "motoristas",
+			"item": [
+				{
+					"name": "{cpf}",
+					"item": [
+						{
+							"name": "fetchDriver",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas/:cpf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas",
+										":cpf"
+									],
+									"variable": [
+										{
+											"id": "4e01d905-9ff4-42af-99e7-b873848d6443",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "removeDriver",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas/:cpf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas",
+										":cpf"
+									],
+									"variable": [
+										{
+											"id": "6caa56e5-dcb2-4590-a359-a98891e61066",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "withdraw",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas",
+										":cpf",
+										"conta-virtual"
+									],
+									"query": [
+										{
+											"key": "amount",
+											"value": "<string>",
+											"description": "(Required) amount"
+										}
+									],
+									"variable": [
+										{
+											"id": "ea258386-ef38-405d-8d69-55121712c88e",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "amount",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "amount",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "amount",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "amount",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/motoristas/:cpf/conta-virtual?amount=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"motoristas",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "amount",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "listDrivers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/motoristas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"motoristas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "addDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"birthDate\": \"12/12/2000\",\n    \"cnh\": {\n        \"category\": \"C\",\n        \"dueDate\": \"12/12/2050\",\n        \"number\": \"123546\"\n    },\n    \"cpf\": \"04472170035\",\n    \"email\": \"galeanojhoel@gmail.com\",\n    \"name\": \"Jhoel\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/motoristas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"motoristas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cnh\": {\n        \"category\": \"A\",\n        \"dueDate\": \"1945-10-22\",\n        \"id\": 7585939,\n        \"number\": \"enim veniam aliquip\"\n    },\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cnh\": {\n        \"category\": \"A\",\n        \"dueDate\": \"1945-10-22\",\n        \"id\": 7585939,\n        \"number\": \"enim veniam aliquip\"\n    },\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cnh\": {\n        \"category\": \"A\",\n        \"dueDate\": \"1945-10-22\",\n        \"id\": 7585939,\n        \"number\": \"enim veniam aliquip\"\n    },\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cnh\": {\n        \"category\": \"A\",\n        \"dueDate\": \"1945-10-22\",\n        \"id\": 7585939,\n        \"number\": \"enim veniam aliquip\"\n    },\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/motoristas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"motoristas"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "passageiros",
+			"item": [
+				{
+					"name": "{cpf}",
+					"item": [
+						{
+							"name": "mostrarPassageiro",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros/:cpf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros",
+										":cpf"
+									],
+									"variable": [
+										{
+											"id": "5b2dcfe1-2f49-4f3f-b985-36cb7756e2eb",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf"
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "adicionarCredito",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros",
+										":cpf",
+										"conta-virtual"
+									],
+									"query": [
+										{
+											"key": "valor",
+											"value": "<string>",
+											"description": "(Required) valor"
+										}
+									],
+									"variable": [
+										{
+											"id": "900670ae-5c20-4307-8c2d-dca1ec682afd",
+											"key": "cpf",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) cpf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "valor",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "valor",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "valor",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "valor",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/passageiros/:cpf/conta-virtual?valor=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"passageiros",
+												":cpf",
+												"conta-virtual"
+											],
+											"query": [
+												{
+													"key": "valor",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "cpf"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "listPassengers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/passageiros",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"passageiros"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "addPassenger",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"birthDate\": \"12/12/2000\",\n    \"cpf\": \"04472170035\",\n    \"email\": \"galenaojhoel@gmailc.om\",\n    \"name\": \"Jonas\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/passageiros",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"passageiros"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/passageiros",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"passageiros"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "veiculos",
+			"item": [
+				{
+					"name": "listVehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veiculos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brand\": \"<string>\",\n    \"category\": \"<string>\",\n    \"color\": \"<string>\",\n    \"modelo\": \"<string>\",\n    \"ownerCpf\": \"<string>\",\n    \"photo\": {\n        \"url\": \"commodo do Excepteur\"\n    },\n    \"plate\": {\n        \"number\": \"sint ullamco pariatur dolore\"\n    },\n    \"qtySeats\": \"<integer>\",\n    \"year\": \"<integer>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/veiculos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"brand\": \"<string>\",\n    \"category\": \"<string>\",\n    \"color\": \"<string>\",\n    \"modelo\": \"<string>\",\n    \"ownerCpf\": \"<string>\",\n    \"photo\": {\n        \"url\": \"nostrud cillum officia\"\n    },\n    \"plate\": {\n        \"number\": \"sunt aliquip\"\n    },\n    \"qtySeats\": \"<integer>\",\n    \"year\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"brand\": \"<string>\",\n    \"category\": \"<string>\",\n    \"color\": \"<string>\",\n    \"modelo\": \"<string>\",\n    \"ownerCpf\": \"<string>\",\n    \"photo\": {\n        \"url\": \"nostrud cillum officia\"\n    },\n    \"plate\": {\n        \"number\": \"sunt aliquip\"\n    },\n    \"qtySeats\": \"<integer>\",\n    \"year\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"brand\": \"<string>\",\n    \"category\": \"<string>\",\n    \"color\": \"<string>\",\n    \"modelo\": \"<string>\",\n    \"ownerCpf\": \"<string>\",\n    \"photo\": {\n        \"url\": \"nostrud cillum officia\"\n    },\n    \"plate\": {\n        \"number\": \"sunt aliquip\"\n    },\n    \"qtySeats\": \"<integer>\",\n    \"year\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"brand\": \"<string>\",\n    \"category\": \"<string>\",\n    \"color\": \"<string>\",\n    \"modelo\": \"<string>\",\n    \"ownerCpf\": \"<string>\",\n    \"photo\": {\n        \"url\": \"nostrud cillum officia\"\n    },\n    \"plate\": {\n        \"number\": \"sunt aliquip\"\n    },\n    \"qtySeats\": \"<integer>\",\n    \"year\": \"<integer>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/veiculos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "listCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veiculos/categorias",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos",
+								"categorias"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"categorias"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"categorias"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"categorias"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"categorias"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "listColors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veiculos/cores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos",
+								"cores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/cores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"cores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/cores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"cores"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/cores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"cores"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/cores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"cores"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "listBrands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veiculos/marcas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos",
+								"marcas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/marcas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"marcas"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/marcas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"marcas"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/marcas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"marcas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/marcas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"marcas"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "listAvailableVehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veiculos/veiculos-disponiveis",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veiculos",
+								"veiculos-disponiveis"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/veiculos-disponiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"veiculos-disponiveis"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/veiculos-disponiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"veiculos-disponiveis"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/veiculos-disponiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"veiculos-disponiveis"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/veiculos/veiculos-disponiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"veiculos",
+										"veiculos-disponiveis"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "46973464-206a-4918-a281-03b329802249",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "13df29c1-f362-4c75-8013-31bf41a88d0e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c0629ed8-e637-4a2c-97a8-16e19f73e878",
+			"key": "baseUrl",
+			"value": "//localhost:8100/me-leva-ai"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

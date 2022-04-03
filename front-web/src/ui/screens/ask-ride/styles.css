@@ -1,0 +1,7 @@
+.ask-ride-screen {
+  margin-top: var(--gutter);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

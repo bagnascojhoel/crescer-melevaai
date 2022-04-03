@@ -1,0 +1,32 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.modal--visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  padding: var(--small-gutter);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  background-color: white;
+}

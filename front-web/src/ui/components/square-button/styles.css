@@ -1,0 +1,7 @@
+.square-button {
+  padding: var(--mini-gutter);
+
+  display: inline-block;
+
+  background-color: var(--color-light-gray);
+}

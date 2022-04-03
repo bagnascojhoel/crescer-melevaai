@@ -1,0 +1,14 @@
+.floating-form {
+  padding: var(--small-gutter);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.floating-form__button {
+  margin-top: var(--gutter);
+}

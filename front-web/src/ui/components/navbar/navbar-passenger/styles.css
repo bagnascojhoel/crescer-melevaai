@@ -1,0 +1,12 @@
+.navbar-info {
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar-info__content {
+  padding: var(--mini-gutter);
+  
+  border-radius: var(--border-radius);
+
+}

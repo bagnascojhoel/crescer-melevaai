@@ -1,0 +1,11 @@
+.ride-history-screen__rating-group {
+  padding: var(--mini-gutter);
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--border-radius);
+  background-color: var(--color-light-gray);
+}
